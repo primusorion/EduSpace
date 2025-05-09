@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d2b3a; /* Darker background for sleekness */
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keep it above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 1.8rem; /* Slightly larger font for emphasis */
+    font-weight: bold;
+    color: #00d2ff; /* Soft cyan color for logo */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Navbar Links Styling */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Larger gap for better spacing */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Link Styling */
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover Effects for Navbar Links */
+  .nav-links li a:hover {
+    color: #00d2ff; /* Cyan color on hover */
+    text-decoration: none;
+    transform: translateY(-2px); /* Slightly lift the text on hover */
+  }
+  
+  /* Add margin to the top of the body to prevent navbar from overlapping content */
+  body {
+    margin-top: 70px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+    }
+  }
+  
